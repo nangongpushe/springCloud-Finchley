@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/nangongpushe/config-repo
+          username: nangongpushe
+          password: Flzxsqc123
+          basedir: D:\idea workplace\springCloud Finchley\config\basedir
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:8761/eureka/,http://eureka2:8762/eureka/
+management:
+  endpoints:
+    web:
+      expose: "*"
